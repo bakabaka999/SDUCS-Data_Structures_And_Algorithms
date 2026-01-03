@@ -124,7 +124,7 @@ long long linkedGraph::prim()
     // 起始节点距离标记为0
     dist[1] = 0;
 
-    minHeap<HeapNode> heap(n); // 开个大小为n的最小堆+
+    minHeap<HeapNode> heap(n); // 开个大小为n的最小堆
     heap.push(HeapNode(1, 0)); // 初始推入第一个节点，权重为0
 
     while (!heap.empty())
@@ -134,7 +134,7 @@ long long linkedGraph::prim()
             weight = temp.key;
 
         if (reached[v])
-            continue; // 如果到达过了就不加入了
+            continue; // 如果到达过了就不加入了，避免成环
         reached[v] = true;
         totalWeight += weight;
 

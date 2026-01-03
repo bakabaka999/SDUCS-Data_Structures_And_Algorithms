@@ -1,0 +1,76 @@
+# 文档和课程资料
+*.doc
+*.docx
+*.pdf
+讲解/
+
+# C/C++ 编译产物
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dSYM/
+
+# IDE 和编辑器配置
+.vs/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 前端相关
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 日志和临时文件
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.cache
+
+# 构建输出
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# 测试数据（如果有）
+test_data/
+*.test

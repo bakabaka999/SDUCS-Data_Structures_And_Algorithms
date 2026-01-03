@@ -113,7 +113,7 @@ void sparseMatrix::transpose()
     for (int i = 0; i < listSize; i++)
         colSize[terms[i].col]++;
 
-    // 确定矩阵第i列第1个非0元素的对应索引
+    // 确定矩阵第i列第1个非0元素的对应列索引
     rowNext[1] = 0;
     for (int i = 2; i <= cols; i++)
         rowNext[i] = rowNext[i - 1] + colSize[i - 1];

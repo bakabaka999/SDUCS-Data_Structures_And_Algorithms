@@ -50,7 +50,7 @@ void minHeap<T>::initialize(T *theHeap, int n)
     for (int root = heapSize / 2; root >= 1; root--)
     {
         T rootElement = heap[root]; // 找到父节点元素
-
+        
         // 为父节点rootElement寻找位置
         int child = 2 * root;
         while (child <= heapSize) // 孩子不能超过堆大小
